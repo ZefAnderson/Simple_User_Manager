@@ -1,0 +1,12 @@
+html 
+    head 
+        title= Vanguard
+    body
+        h1 Vanguard Contacts
+        ul 
+            each user in users
+                li Name: #{user.name}
+                li Email: #{user.email}
+                li Username: #{user.username}
+                li Age: #{user.age}
+        include buttons.pug
