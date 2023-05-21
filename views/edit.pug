@@ -1,0 +1,21 @@
+form(method='POST', action='/edit')
+    html 
+        head 
+            title Edit 
+        body 
+            h1 Update User Info
+        div     
+            label(for='name') Name
+            input(id='name', name='name')
+        div     
+            label(for='email') Email
+            input(id='email', name='email')
+        div 
+            label(for='username') Username
+            input(id='username', name='username')
+        div     
+            label(for='age') Age
+            input(id='age', name='age')
+
+        div 
+            input(type='submit' value='Update User')

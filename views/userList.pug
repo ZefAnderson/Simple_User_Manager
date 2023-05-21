@@ -3,10 +3,20 @@ html
         title= Vanguard
     body
         h1 Vanguard Contacts
-        ul 
+        table 
+            tr 
+                th Name 
+                th Email 
+                th Username 
+                th Age 
             each user in users
-                li Name: #{user.name}
-                li Email: #{user.email}
-                li Username: #{user.username}
-                li Age: #{user.age}
-        include buttons.pug
+                tr 
+                    td #{user.name}
+                    td #{user.email}
+                    td #{user.username}
+                    td #{user.age}
+                    include buttons.pug
+        div 
+            form(action="/") 
+                label(for="addButton") 
+                button(type="submit" id="addButton") Add User
