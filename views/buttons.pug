@@ -1,8 +1,8 @@
 td 
     form(action="/edit" method="POST") 
-        label(for="editButton") 
+        input(type="hidden" name="uuid" value=user.uuid)
         button(type="submit" id="editButton") Edit
 td 
     form(action="/delete" method="POST") 
-        input(type="hidden" name="id" value=user.uuid)
+        input(type="hidden" name="uuid" value=user.uuid)
         button(type="submit") Delete

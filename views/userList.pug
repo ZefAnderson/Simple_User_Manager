@@ -6,17 +6,23 @@ html
         table 
             tr 
                 th Name 
+                th 
                 th Email 
+                th 
                 th Username 
+                th 
                 th Age 
             each user in users
                 tr 
                     td #{user.name}
+                    td 
                     td #{user.email}
+                    td 
                     td #{user.username}
+                    td 
                     td #{user.age}
+                    td 
                     include buttons.pug
         div 
             form(action="/") 
-                label(for="addButton") 
-                button(type="submit" id="addButton") Add User
+                input(type='submit' value='Add User')
