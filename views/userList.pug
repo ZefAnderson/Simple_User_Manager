@@ -3,8 +3,8 @@ html
         title= Vanguard
     body
         h1 Vanguard Contacts
-        table 
-            tr 
+        table(style='border-collapse: collapse' border='1') 
+            tr
                 th Name 
                 th 
                 th Email 
@@ -13,7 +13,7 @@ html
                 th 
                 th Age 
             each user in users
-                tr 
+                tr(style='text-align: center') 
                     td #{user.name}
                     td 
                     td #{user.email}
